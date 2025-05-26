@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio - website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/42a2a02f50.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h2 class="logo"><span>O</span>desomi Kamorudeen A.</h2>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front-End Developer</p>
+                <h1>Hi, I'm <span>Odesomi</span> Kamorudeen <br> <span id="from">from Lagos, Nigeria</span></h1>
+            </div>
+        </div>
+    </div>
+    <!---------------------------------About----------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/odesomi1.jpg" alt="user">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Motivated and detail-oriented junior front-end developer with a strong eagerness to learn and
+                        thrive within a collaborative team setting. Proficient in HTML, CSS, Bootstrap, Tailwind CSS,
+                        JavaScript, MongoDB, Express.js, React.js, and Node.js. Adept at developing responsive,
+                        pixel-perfect user interfaces with a focus on cross-browser compatibility and performance
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education></p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br> Web app Development</li>
+                            <li><span>UI/UX</span><br> Designing Web/App interfaces</li>
+                            <li><span>App Development</span><br> Building Andriod apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - 2023</span><br> Customer Support Officer at Sterling Bank</li>
+                            <li><span>2023 - 2025</span><br> Data Annotator Specialist at AWARRI</li>
+                            <li><span>2025 - 2025</span><br> Web Development Training at Udemy</li>
+                            <li><span> 2025 - 2025</span><br> UI/UX Design Trainee at Udemy</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019</span><br>BSc in Banking and Finance. <br> Federal University of Agriculture,
+                                Abeokuta.</li>
+                            <li><span>2025</span><br>Certification in Front-End Development. <br>Udemy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------------------------Service-------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Development of fully responsive web apps with monitored user feedback and performs routine
+                        updates to website layouts.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Designs user-friendly interfaces that enable users to understand how to use complex technical
+                        products</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Development of fully responsive web apps with monitored user feedback and performs routine
+                        updates to websites layouts.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------------Portfolio-------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="https://images.unsplash.com/photo-1613977257365-aaae5a9817ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+                        alt="work1">
+                    <div class="layer">
+                        <h3>Mern stack Real Estate App</h3>
+                        <p>The app that lets you search for millions of estates and houses to people around the world to
+                            book appointments.</p>
+                        <a href="https://realestatefullstackapp.vercel.app/"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work1.jpg" alt="work1">
+                    <div class="layer">
+                        <h3>Mobile Dictionary App</h3>
+                        <p>The app that lets you search for millions of words meanings to people around the world</p>
+                        <a href="https://jimohsegun1.github.io/dictionary/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work2.jpeg" alt="work2">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <p>The app that connects you to the location of all countries and cities around the world.</p>
+                        <a href="https://jimohsegun1.github.io/sailweather_prjct/"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work3.jpg" alt="work3">
+                    <div class="layer">
+                        <h3>Body Mass Calculator App</h3>
+                        <p>The app that allows you to calculate the body weight of individuals to check whether an
+                            individual is overweight or not</p>
+                        <a href="https://jimohsegun1.github.io/BMI-Calculator-Project-for-Top-Universe/"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://images.unsplash.com/photo-1688793488916-c9416f9a4480?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80"
+                        alt="work3">
+                    <div class="layer">
+                        <h3>Todo list Mern stack App</h3>
+                        <p>The app that allows you to keep tabs of your chores in which yoo want to do</p>
+                        <a href="https://exquisite-snickerdoodle-ce8fc6.netlify.app/"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!------------------------Contact--------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i>odesomi93@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>07069411772</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/odesomi"><i class="fab fa-facebook"></i></a>
+                        <a href="@paparasee01"><i class="fab fa-twitter-square"></i></a>
+                        <a href="@official_dheleke"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/odesomi-kamorudeen"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="https://docs.google.com/document/d/1XIuoQGyoqv830HqQNHGVluTO8reT3VRc-nZxnUHKUS4/edit?tab=t.0" download class="btn btn2">Download Cv</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="eame" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+         <div class="copyright">
+            <p>Copyright &copy Odesomi Kamorudeen Adeleke.</p>
+        </div>
+    </div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+</body>
+
+</html>
